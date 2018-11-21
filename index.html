@@ -1,21 +1,84 @@
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Offer – Day Away</title>
+
+  <!-- COMMON TAGS -->
+  <meta charset="utf-8">
+  <title>Offer | Day Away</title>
+  <!-- Search Engine -->
+  <meta name="description" content="Offer is Lil Data (PC Music) and Harry Burgess (Adult Jazz)">
+  <meta name="image" content="https://cdn.offer.band/file/offerband/dayaway.jpg">
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="Offer">
+  <meta itemprop="description" content="Offer is Lil Data (PC Music) and Harry Burgess (Adult Jazz)">
+  <meta itemprop="image" content="https://cdn.offer.band/file/offerband/dayaway.jpg">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Offer">
+  <meta name="twitter:description" content="Offer is Lil Data (PC Music) and Harry Burgess (Adult Jazz)">
+  <meta name="twitter:site" content="@offer_band">
+  <meta name="twitter:image:src" content="https://cdn.offer.band/file/offerband/dayaway.jpg">
+  <meta name="twitter:player" content="https://www.youtube.com/embed/_wlcX8YhL0c">
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta name="og:title" content="Offer">
+  <meta name="og:description" content="Offer is Lil Data (PC Music) and Harry Burgess (Adult Jazz)">
+  <meta name="og:image" content="https://cdn.offer.band/file/offerband/dayaway.jpg">
+  <meta name="og:url" content="http://offer.band">
+  <meta name="og:site_name" content="Offer">
+  <meta name="og:locale" content="en_UK">
+  <meta name="og:video" content="https://cdn.offer.band/file/offerband/grass.mp4">
+  <meta name="fb:admins" content="947531098779917">
+  <meta name="og:type" content="website">
+
+  <link rel="icon" href="http://cdn.offer.band/file/offerband/favicon.ico">
+
   <style>
     body {
       font-family: Helvetica, sans-serif;
+      background-image: url("http://cdn.offer.band/file/offerband/") cover no-repeat;
       color: #548DD4;
-      text-align: center;
+    }
+    #grass {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+      z-index: -100;
+    }
+    #info {
+      width: 70%;
+      margin-left: 15%;
+      margin-top: 3%;
+      /*margin-bottom: 5%;*/
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: rgba(230,230,230,1);
+      box-shadow: 0 10px 60px 5px rgba(0,0,0,0.05);
+      -webkit-border-radius: 8px;
+      -moz-border-radius:    8px;
+      border-radius:         8px;
+    }
+    #bc {
+      width: 70%;
+      margin-left: 15%;
+      margin-top: 3%;
+      /*margin-bottom: 5%;*/
+      padding-bottom: 50px;
+      background-color: #eee;
+      box-shadow: 0 10px 60px 5px rgba(0,0,0,0.05);
+      -webkit-border-radius: 8px;
+      -moz-border-radius:    8px;
+      border-radius:         8px;
     }
     #outer {
-      width: 80%;
-      margin-left: 10%;
+      width: 70%;
+      margin-left: 15%;
       margin-top: 3%;
       margin-bottom: 5%;
       padding-bottom: 50px;
+      background-color: #fff;
       border: 1px solid rgb(166,166,166);
-      box-shadow: 0 10px 60px 5px rgba(0,0,0,0.35);
+      box-shadow: 0 10px 60px 5px rgba(0,0,0,0.5);
       -webkit-border-radius: 8px;
       -moz-border-radius:    8px;
       border-radius:         8px;
@@ -26,18 +89,98 @@
       display: block; 
       margin-left: auto;
       margin-right: auto;
+      text-align: center;
     }
     #title {
       letter-spacing: 7px;
+      background-color: #fff;
+      margin: 0;
+      text-align: center;
     }
     #para {
       line-height: 30px;
       font-size: 0.9em;
+      background-color: #fff;
+      margin: 0;
+      text-align: center;
+    }
+    #links {
+      line-height: 30px;
+      font-size: 0.9em;
+      text-align: center;
+      /*background-color: #fff;*/
+      margin: 0; 
+    }
+    h1 {
+      background-color: #fff; 
+      margin: 0;
+    }
+    a {
+      /*background-color: #eee; */
+      margin: 0;
+      color: #548DD4;
+    }
+
+    #pr {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 10%;
+      display: none;
+      width: 80%;
+      line-height: 20px;
+      font-size: 0.8em;
     }
   </style>
+
+  <script type="text/javascript">
+    function toggle (id) {
+       var e = document.getElementById (id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+  </script>
+
 </head>
 <body>
+  
+  <div id="info">
+    <p id="links">
+      <a href="#" onclick="toggle ('pr');">Press Release</a> |
+      <a href="mailto:info@offer.band">Contact</a> |
+      <a target="_blank" href="https://spotify.com">Spotify</a> | 
+      <a target="_blank" href="https://offerband.bandcamp.com">Bandcamp</a> | 
+      <a target="_blank" href="https://www.youtube.com/channel/UCpZjg3_y49z2LSPCJ6suCJw">YouTube</a> | 
+      <a target="_blank" href="http://instagram.com/offerband">Instagram</a> | 
+      <a target="_blank" href="http://twitter.com/offer_band">Twitter</a> | 
+      <a target="_blank" href="http://facebook.com/offerbanduk">Facebook</a> | 
+      <a target="_blank" href="http://soundcloud.com/offerband">SoundCloud</a> |
+      <a target="_blank" href="#">Mailing list</a>
+    </p>
+    <div id="pr">
+      <p>
+        Offer is the public result of almost ten years of private collaboration. The result sees Jack Armitage (AKA Lil Data of PC Music) and Adult Jazz vocalist Harry Burgess create a body of work that is equal parts bracing and melodic – a collection of bizarre tracks stretched somewhere between maximalist pop, folk singing and contemporary music. 
+        <br><br>
+        Day Away is the first track shared from a forthcoming full-length. 
+        <br><br>
+        With Offer, Armitage and Burgess sustain the tension between the uneven and disordered intimacy of improvisation, and the brash clarity of the digital production placed in dialogue with it. Bright and strange production is hung upon tangled, hooky, vocal melodies, propelling the emotive vocals of Burgess further into the seemingly hostile, often artificial territory explored on Earrings Off! – Adult Jazz’s second offering, released on cult electronic label Tri Angle. It’s territory well known to Armitage, whose live-coding and production as Lil Data found a home on boundary-pushing London label PC Music, and later on the standout ‘Track 10’ from Charli XCX’s Pop 2 mixtape. 
+        <br><br>
+        Armitage and Burgess first met online in 2008, on a fan forum for mid-noughties dance punks ¡Forward Russia! This connection made its way onto Myspace and the two started sharing demos. The files (“essentially white noise and a Winston Churchill speech”) marked out an experimental bent, but nothing stuck. The connection was reified a couple of years later when the pair attended Leeds University – the results of their day-long, improvisational rehearsals in the stuffy basement of their halls again never seeing the light of day, but making clear that there was some unfinished business. 
+        <br><br>
+        The current embodiment of the partnership began in the summer of 2015 – the initial sessions focusing on exploring the Roli Seaboard, a highly expressive keyboard with continuous silicon keys, based on tech from the sex toy industry. Armitage’s recordings and manipulations of Burgess’s first improvisations with the controller became the spines of the songs that make up their forthcoming full-length, navigating the hinterland between the pair’s respective worlds and showing it to be a fertile place. 
+        <br><br>
+        Offer doesn’t share much sonically with ¡Forward Russia! – but they serve as a fitting origin point: DIY, bracing and singular. 
+      </p>
+    </div>
+  </div>
+
+  <div id="bc">
+    <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=9712968/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/tracklist=false/tracks=9712968/esig=bb272540021b4c7c503d5674926a17b8/" seamless><a href="http://offerband.bandcamp.com/track/day-away">Day Away by Offer</a></iframe>
+  </div>
+
   <div id="outer">
+
     <img id="header" src="header.png" alt="">
     <h1 id="title"><i>DAY AWAY</i></h1>
     <p id="para"> <br> <i>
@@ -123,6 +266,13 @@
       IT DOESN’T FAZE HIM AT ALL <br>
       IT DOESN’T FAZE HIM AT ALL
     </i> </p>
+  </div>
+  <div id="video">
+    <video autoplay loop muted id="grass">
+      <source src="https://f002.backblazeb2.com/file/offerband/grass.mp4" type="video/mp4">
+      <!-- <source src="http://cdn.offer.band/file/offerband/grass.mp4" type="video/mp4"> -->
+      <source src="http://cdn.offer.band/file/offerband/grass.webm" type="video/webm">
+    </video>
   </div>
 </body>
 </html>

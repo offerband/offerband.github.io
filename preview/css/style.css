@@ -166,15 +166,3 @@ a:hover {
 	padding-top: 0px;
 	padding-bottom: 15px;
 }
-
-/*    MOBILE   */
-
-@media screen and (max-width: 767px) {
-  
-  .header {
-  	font-size: 4em;
-  	width:5%;
-  	background-color:#182;
-  }
-  
-}

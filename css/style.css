@@ -83,6 +83,10 @@ a:hover {
 .release-art img {
 }
 
+.release-icon-row {
+	margin-top: 30px;
+}
+
 .release-name {
 	font-size: 2.5em;
 	line-height: 0.75em;

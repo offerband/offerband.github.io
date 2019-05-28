@@ -105,13 +105,14 @@ a:hover {
 /*     KLAHRK REMIX      */
 
 #klahrk {
-	height: 575px;
+	height: 900px;
 	/*background: rgb(0,0,0);*/
 	/*background: radial-gradient(circle, rgba(100,100,100,1) 0%, rgba(0,0,0,1) 60%);*/
 }
 
 #klahrk img {
 	width: 400px;
+	height: 400px;
 }
 
 #klahrk .release-name {
